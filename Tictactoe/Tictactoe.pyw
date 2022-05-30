@@ -166,6 +166,23 @@ def winner_check():
         winner = True
         messagebox.showinfo("Tictactoe", "O winner")
         lock()
+       
+    elif count == 9:
+        tlb.config(bg="#DE3163")
+        tmb.config(bg="#DE3163")
+        trb.config(bg="#DE3163")
+
+        mlb.config(bg="#DE3163")
+        mmb.config(bg="#DE3163")
+        mrb.config(bg="#DE3163")
+
+        blb.config(bg="#DE3163")
+        bmb.config(bg="#DE3163")
+        brb.config(bg="#DE3163")
+        
+        messagebox.showinfo("Tictactoe", "Draw!")
+        
+        lock()
 
 #function to decide to put X or O or if the spot is already taken
 def logic(b):
