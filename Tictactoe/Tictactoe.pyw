@@ -12,7 +12,7 @@ root.geometry("407x400")
 root.resizable(False, False)
 root.config(bg="#17161b")
 try:
-    root.iconbitmap(r"/Tictactoe/assets/Xoicon.ico")#specify path here
+    root.iconbitmap(r"/Tictactoe/assets/Xoicon.ico")#specify Xoicon.ico path here
 except:
     pass
 
@@ -193,7 +193,7 @@ def logic(b):
         clicked = False
         count += 1
         try:
-            mixer.music.load(r"/Tictactoe/assets/Sounds/Xpress.mp3")#specify path here
+            mixer.music.load(r"/Tictactoe/assets/Sounds/Xpress.mp3")#specify Xsound.mp3 path here
             mixer.music.play(loops=0)
         except:
             pass
@@ -205,7 +205,7 @@ def logic(b):
         clicked = True
         count += 1
         try:
-            mixer.music.load(r"/Tictactoe/assets/Sounds/Opress.mp3")#specify path here
+            mixer.music.load(r"/Tictactoe/assets/Sounds/Opress.mp3")#specify Osound.mp3 path here
             mixer.music.play(loops=0)
         except:
             pass
